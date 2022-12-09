@@ -15765,123 +15765,118 @@ function $c_Lchoreo_frontend_ICECaos$() {
     return $m_Lchoreo_DSL$().restrParse__T__T2(code$1)
   }))(this));
   $m_s_package$();
-  var $$x32 = $m_sr_ScalaRunTime$();
-  var nameCode = new $c_T2("R1", "(a->b:yes||b->a:yes) +\n(a->b:no||b->a:no)");
+  var $$x37 = $m_sr_ScalaRunTime$();
+  var $$x36 = $m_Lcaos_frontend_Configurator$();
+  var self = new $c_T2("R1", "(a->b:yes||b->a:yes) +\n(a->b:no||b->a:no)");
+  var $$x35 = $$x36.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self, "R1 example from the journal paper."));
+  var $$x34 = $m_Lcaos_frontend_Configurator$();
+  var self$1 = new $c_T2("R2", "a->b:int;\n((b->a:yes + b->a:no)\n ||\n a->b:bool)");
+  var $$x33 = $$x34.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$1, "R2 example from the journal paper."));
+  var $$x32 = $m_Lcaos_frontend_Configurator$();
+  var self$2 = new $c_T2("R3", "a->b:int; || a->b:bool\n[1->3]");
+  var $$x31 = $$x32.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$2, "R3 example from the journal paper."));
+  var $$x30 = $m_Lcaos_frontend_Configurator$();
+  var self$3 = new $c_T2("R4", "(a->b:yes + a->b:no);\na->b:int");
+  var $$x29 = $$x30.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$3, "R4 example from the journal paper."));
+  var $$x28 = $m_Lcaos_frontend_Configurator$();
+  var self$4 = new $c_T2("R4 (tree-like)", "(a->b:yes;a->b:int) +\n(a->b:no; a->b:int)");
+  var $$x27 = $$x28.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$4, "R4 example from the journal paper, after moving the trailing actions inside the choice."));
+  var nameCode = new $c_T2("Fig.1", "((c->a:r;\n (a->c:y+a->c:n) ||\n c->b:r;\n (b->c:y+b->c:n)\n) + 0)\n||\nc->a:d || c->b:d\n\n[4->13,6->13\n,10->15,12->15]");
   var example = $as_T(nameCode.T2__f__2);
   var name = $as_T(nameCode.T2__f__1);
-  var $$x31 = new $c_Lcaos_frontend_Configurator$Example(example, name, "");
-  var nameCode$1 = new $c_T2("R2", "a->b:int; (b->a:yes + b->a:no)\n|| a->b:bool\n[1->7, 2->8]");
+  var $$x26 = new $c_Lcaos_frontend_Configurator$Example(example, name, "");
+  var $$x25 = $m_Lcaos_frontend_Configurator$();
+  var self$5 = new $c_T2("Buyer-seller (FACS)", "b1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n(b2->s:ok;b2->s:string;s->b2:date + b2->s:quit)");
+  var $$x24 = $$x25.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$5, "Two-buyers-protocol"));
+  var $$x23 = $m_Lcaos_frontend_Configurator$();
+  var self$6 = new $c_T2("Simple stream (FACS)", "(d->r:bool||k->r:bool);\nr->c:bool;\n(d->r:bool||k->r:bool);\nr->c:bool");
+  var $$x22 = $$x23.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$6, "Simple streaming protocol"));
+  var $$x21 = $m_Lcaos_frontend_Configurator$();
+  var self$7 = new $c_T2("BS-ill-chan", "b1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n((b2->s:ok||b2->s:string);s->b2:date + b2->s:quit)");
+  var $$x20 = $$x21.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$7, "Ill-channeled version of the buyer-seller protocol with parallel sends"));
+  var $$x19 = $m_Lcaos_frontend_Configurator$();
+  var self$8 = new $c_T2("SS-ill-chan", "((d->r:bool||k->r:bool);\n r->c:bool)\n||\n((d->r:bool||k->r:bool);\n r->c:bool)");
+  var $$x18 = $$x19.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$8, "Ill-channeled version of the simple streaming protocol with parallel sends"));
+  var $$x17 = $m_Lcaos_frontend_Configurator$();
+  var self$9 = new $c_T2("MC", "(m->w1:t;w1->m:d) ||\n(m->w2:t;w2->m:d)");
+  var $$x16 = $$x17.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$9, "Master-Workers protocol"));
+  var $$x15 = $m_Lcaos_frontend_Configurator$();
+  var self$10 = new $c_T2("DV", "((a->b:y || a->c:y) +\n (a->b:n || a->c:n))   ||\n((b->a:y || b->c:y) +\n (b->a:n || b->c:n))   ||\n((c->a:y || c->b:y) +\n (c->a:n || c->b:n))");
+  var $$x14 = $$x15.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$10, "Distribted Voting protocol with 3 participants"));
+  var $$x13 = $m_Lcaos_frontend_Configurator$();
+  var self$11 = new $c_T2("Race", "(\n (ctr->r1: start ||\n  ctr->r2: start);\n (r1->r1:run||\n  r2->r2:run); \n (r1->ctr: finish;r1->r1:rest ||\n  r2->ctr: finish;r2->r2:rest)\n)*");
+  var $$x12 = $$x13.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$11, "Two runners in a race with a controller."));
+  var nameCode$1 = new $c_T2("Ex.1.1", "(a->b:x + a->c:x);\n(d->b:x + d->e:x)");
   var example$1 = $as_T(nameCode$1.T2__f__2);
   var name$1 = $as_T(nameCode$1.T2__f__1);
-  var $$x30 = new $c_Lcaos_frontend_Configurator$Example(example$1, name$1, "");
-  var nameCode$2 = new $c_T2("R3", "a->b:int; || a->b:bool\n[1->3]");
+  var $$x11 = new $c_Lcaos_frontend_Configurator$Example(example$1, name$1, "");
+  var nameCode$2 = new $c_T2("Ex.1.2", "(a->b:x + c->b:x)* ||\n(c->a:x + c->b:x)");
   var example$2 = $as_T(nameCode$2.T2__f__2);
   var name$2 = $as_T(nameCode$2.T2__f__1);
-  var $$x29 = new $c_Lcaos_frontend_Configurator$Example(example$2, name$2, "");
-  var nameCode$3 = new $c_T2("R4", "(a->b:yes + a->b:no);\na->b:int");
+  var $$x10 = new $c_Lcaos_frontend_Configurator$Example(example$2, name$2, "");
+  var $$x9 = $m_Lcaos_frontend_Configurator$();
+  var self$12 = new $c_T2("Ex.2.1 (not dep-guard)", "(a->b:x + a->c:x)*");
+  var $$x8 = $$x9.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$12, "Not dependently guarded example"));
+  var $$x7 = $m_Lcaos_frontend_Configurator$();
+  var self$13 = new $c_T2("Ex.2.2 (dep-guard)", "(a->b:x + b->a:x)*");
+  var $$x6 = $$x7.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$13, "Dependently guarded example"));
+  var nameCode$3 = new $c_T2("Fig.5", "a->b:x;\n(b->c:x+b->d:x);\nc->d:x");
   var example$3 = $as_T(nameCode$3.T2__f__2);
   var name$3 = $as_T(nameCode$3.T2__f__1);
-  var $$x28 = new $c_Lcaos_frontend_Configurator$Example(example$3, name$3, "");
-  var nameCode$4 = new $c_T2("R4 (tree-like)", "(a->b:yes;a->b:int) +\n(a->b:no; a->b:int)");
+  var $$x5 = new $c_Lcaos_frontend_Configurator$Example(example$3, name$3, "");
+  var nameCode$4 = new $c_T2("Fig.6", "((a->b:x ;(b->a:x + b->d:x))+\n(a->c:x ;(c->a:x + c->d:x))) ; d->a:x");
   var example$4 = $as_T(nameCode$4.T2__f__2);
   var name$4 = $as_T(nameCode$4.T2__f__1);
-  var $$x27 = new $c_Lcaos_frontend_Configurator$Example(example$4, name$4, "");
-  var nameCode$5 = new $c_T2("Fig.1", "((c->a:r;\n (a->c:y+a->c:n) ||\n c->b:r;\n (b->c:y+b->c:n)\n) + 0)\n||\nc->a:d || c->b:d\n\n[4->13,6->13\n,10->15,12->15]");
+  var $$x4 = new $c_Lcaos_frontend_Configurator$Example(example$4, name$4, "");
+  var nameCode$5 = new $c_T2("Ex.4.1", "a->b:x;\n(b->a:x + b->a:y)");
   var example$5 = $as_T(nameCode$5.T2__f__2);
   var name$5 = $as_T(nameCode$5.T2__f__1);
-  var $$x26 = new $c_Lcaos_frontend_Configurator$Example(example$5, name$5, "");
-  var $$x25 = $m_Lcaos_frontend_Configurator$();
-  var self = new $c_T2("Buyer-seller (FACS)", "b1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n(b2->s:ok;b2->s:string;s->b2:date + b2->s:quit)");
-  var $$x24 = $$x25.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self, "Two-buyers-protocol"));
-  var $$x23 = $m_Lcaos_frontend_Configurator$();
-  var self$1 = new $c_T2("Simple stream (FACS)", "(d->r:bool||k->r:bool);\nr->c:bool;\n(d->r:bool||k->r:bool);\nr->c:bool");
-  var $$x22 = $$x23.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$1, "Simple streaming protocol"));
-  var $$x21 = $m_Lcaos_frontend_Configurator$();
-  var self$2 = new $c_T2("BS-ill-chan", "b1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n((b2->s:ok||b2->s:string);s->b2:date + b2->s:quit)");
-  var $$x20 = $$x21.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$2, "Ill-channeled version of the buyer-seller protocol with parallel sends"));
-  var $$x19 = $m_Lcaos_frontend_Configurator$();
-  var self$3 = new $c_T2("SS-ill-chan", "((d->r:bool||k->r:bool);\n r->c:bool)\n||\n((d->r:bool||k->r:bool);\n r->c:bool)");
-  var $$x18 = $$x19.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$3, "Ill-channeled version of the simple streaming protocol with parallel sends"));
-  var $$x17 = $m_Lcaos_frontend_Configurator$();
-  var self$4 = new $c_T2("MC", "(m->w1:t;w1->m:d) ||\n(m->w2:t;w2->m:d)");
-  var $$x16 = $$x17.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$4, "Master-Workers protocol"));
-  var $$x15 = $m_Lcaos_frontend_Configurator$();
-  var self$5 = new $c_T2("DV", "((a->b:y || a->c:y) +\n (a->b:n || a->c:n))   ||\n((b->a:y || b->c:y) +\n (b->a:n || b->c:n))   ||\n((c->a:y || c->b:y) +\n (c->a:n || c->b:n))");
-  var $$x14 = $$x15.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$5, "Distribted Voting protocol with 3 participants"));
-  var $$x13 = $m_Lcaos_frontend_Configurator$();
-  var self$6 = new $c_T2("Race", "(\n (ctr->r1: start ||\n  ctr->r2: start);\n (r1->r1:run||\n  r2->r2:run); \n (r1->ctr: finish;r1->r1:rest ||\n  r2->ctr: finish;r2->r2:rest)\n)*");
-  var $$x12 = $$x13.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$6, "Two runners in a race with a controller."));
-  var nameCode$6 = new $c_T2("Ex.1.1", "(a->b:x + a->c:x);\n(d->b:x + d->e:x)");
+  var $$x3 = new $c_Lcaos_frontend_Configurator$Example(example$5, name$5, "");
+  var nameCode$6 = new $c_T2("Ex.4.2", "(a->b:x ; b->a:x)+\n(a->b:x ; b->a:y)");
   var example$6 = $as_T(nameCode$6.T2__f__2);
   var name$6 = $as_T(nameCode$6.T2__f__1);
-  var $$x11 = new $c_Lcaos_frontend_Configurator$Example(example$6, name$6, "");
-  var nameCode$7 = new $c_T2("Ex.1.2", "(a->b:x + c->b:x)* ||\n(c->a:x + c->b:x)");
+  var $$x2 = new $c_Lcaos_frontend_Configurator$Example(example$6, name$6, "");
+  var nameCode$7 = new $c_T2("Ex.4.3", "a->b:x + a->b:x");
   var example$7 = $as_T(nameCode$7.T2__f__2);
   var name$7 = $as_T(nameCode$7.T2__f__1);
-  var $$x10 = new $c_Lcaos_frontend_Configurator$Example(example$7, name$7, "");
-  var $$x9 = $m_Lcaos_frontend_Configurator$();
-  var self$7 = new $c_T2("Ex.2.1 (not dep-guard)", "(a->b:x + a->c:x)*");
-  var $$x8 = $$x9.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$7, "Not dependently guarded example"));
-  var $$x7 = $m_Lcaos_frontend_Configurator$();
-  var self$8 = new $c_T2("Ex.2.2 (dep-guard)", "(a->b:x + b->a:x)*");
-  var $$x6 = $$x7.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$8, "Dependently guarded example"));
-  var nameCode$8 = new $c_T2("Fig.5", "a->b:x;\n(b->c:x+b->d:x);\nc->d:x");
+  var $$x1 = new $c_Lcaos_frontend_Configurator$Example(example$7, name$7, "");
+  var nameCode$8 = new $c_T2("Special pomset", "a->b:x  || a->b:y\n// where ab!x \u2264 ab!y\n// but ab?y \u2264 ab?x.\n[1->3, 4->2]");
   var example$8 = $as_T(nameCode$8.T2__f__2);
   var name$8 = $as_T(nameCode$8.T2__f__1);
-  var $$x5 = new $c_Lcaos_frontend_Configurator$Example(example$8, name$8, "");
-  var nameCode$9 = new $c_T2("Fig.6", "((a->b:x ;(b->a:x + b->d:x))+\n(a->c:x ;(c->a:x + c->d:x))) ; d->a:x");
-  var example$9 = $as_T(nameCode$9.T2__f__2);
-  var name$9 = $as_T(nameCode$9.T2__f__1);
-  var $$x4 = new $c_Lcaos_frontend_Configurator$Example(example$9, name$9, "");
-  var nameCode$10 = new $c_T2("Ex.4.1", "a->b:x;\n(b->a:x + b->a:y)");
-  var example$10 = $as_T(nameCode$10.T2__f__2);
-  var name$10 = $as_T(nameCode$10.T2__f__1);
-  var $$x3 = new $c_Lcaos_frontend_Configurator$Example(example$10, name$10, "");
-  var nameCode$11 = new $c_T2("Ex.4.2", "(a->b:x ; b->a:x)+\n(a->b:x ; b->a:y)");
-  var example$11 = $as_T(nameCode$11.T2__f__2);
-  var name$11 = $as_T(nameCode$11.T2__f__1);
-  var $$x2 = new $c_Lcaos_frontend_Configurator$Example(example$11, name$11, "");
-  var nameCode$12 = new $c_T2("Ex.4.3", "a->b:x + a->b:x");
-  var example$12 = $as_T(nameCode$12.T2__f__2);
-  var name$12 = $as_T(nameCode$12.T2__f__1);
-  var $$x1 = new $c_Lcaos_frontend_Configurator$Example(example$12, name$12, "");
-  var nameCode$13 = new $c_T2("Special pomset", "a->b:x  || a->b:y\n// where ab!x \u2264 ab!y\n// but ab?y \u2264 ab?x.\n[1->3, 4->2]");
-  var example$13 = $as_T(nameCode$13.T2__f__2);
-  var name$13 = $as_T(nameCode$13.T2__f__1);
-  var elems = $$x32.wrapRefArray__AO__sci_ArraySeq(new ($d_Lcaos_frontend_Configurator$Example.getArrayOf().constr)([$$x31, $$x30, $$x29, $$x28, $$x27, $$x26, $$x24, $$x22, $$x20, $$x18, $$x16, $$x14, $$x12, $$x11, $$x10, $$x8, $$x6, $$x5, $$x4, $$x3, $$x2, $$x1, new $c_Lcaos_frontend_Configurator$Example(example$13, name$13, "")]));
+  var elems = $$x37.wrapRefArray__AO__sci_ArraySeq(new ($d_Lcaos_frontend_Configurator$Example.getArrayOf().constr)([$$x35, $$x33, $$x31, $$x29, $$x27, $$x26, $$x24, $$x22, $$x20, $$x18, $$x16, $$x14, $$x12, $$x11, $$x10, $$x8, $$x6, $$x5, $$x4, $$x3, $$x2, $$x1, new $c_Lcaos_frontend_Configurator$Example(example$8, name$8, "")]));
   var prefix$1 = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
   this.Lchoreo_frontend_ICECaos$__f_examples = $m_Lchoreo_Examples$().Lchoreo_Examples$__f_examples2show.map__F1__sci_List(new $c_sjsr_AnonFunction1(((this$2$1) => ((xy) => {
     var xy$1 = $as_T2(xy);
-    var self$9 = xy$1.T2__f__1;
-    var ev$33 = $as_T(self$9);
+    var self$14 = xy$1.T2__f__1;
+    var ev$38 = $as_T(self$14);
     var this$96 = $as_Lchoreo_syntax_Choreo(xy$1.T2__f__2);
     var y = $f_Lchoreo_syntax_Choreo__toString__T(this$96);
-    var nameCode$14 = new $c_T2(ev$33, y);
-    var example$14 = $as_T(nameCode$14.T2__f__2);
-    var name$14 = $as_T(nameCode$14.T2__f__1);
-    return new $c_Lcaos_frontend_Configurator$Example(example$14, name$14, "")
+    var nameCode$9 = new $c_T2(ev$38, y);
+    var example$9 = $as_T(nameCode$9.T2__f__2);
+    var name$9 = $as_T(nameCode$9.T2__f__1);
+    return new $c_Lcaos_frontend_Configurator$Example(example$9, name$9, "")
   }))(this))).$colon$colon$colon__sci_List__sci_List(prefix$1);
   $m_s_package$();
-  var $$x34 = $m_sr_ScalaRunTime$();
+  var $$x39 = $m_sr_ScalaRunTime$();
   var y$1 = $m_Lcaos_frontend_Configurator$().view__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$3$1) => ((xc) => {
     var xc$1 = $as_T2(xc);
     return $m_Lchoreo_view_SequenceChart$().apply__Lchoreo_syntax_Choreo__T($as_Lchoreo_syntax_Choreo(xc$1.T2__f__1))
   }))(this)), $m_Lcaos_view_Mermaid$());
-  var $$x33 = new $c_T2("Sequence Diagram (w/o extension)", y$1);
+  var $$x38 = new $c_T2("Sequence Diagram (w/o extension)", y$1);
   var y$2 = $m_Lcaos_frontend_Configurator$().view__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$4$1) => ((xc$2) => {
     var xc$3 = $as_T2(xc$2);
     var this$103 = $as_sc_IterableOnceOps(xc$3.T2__f__2);
     return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$103, "", " / ", "")
   }))(this)), $m_Lcaos_view_Text$());
-  var elems$1 = $$x34.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$$x33, new $c_T2("Extension", y$2)]));
+  var elems$1 = $$x39.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$$x38, new $c_T2("Extension", y$2)]));
   this.Lchoreo_frontend_ICECaos$__f_smallWidgets = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems$1);
   $m_s_package$();
-  var $$x56 = $m_sr_ScalaRunTime$();
+  var $$x61 = $m_sr_ScalaRunTime$();
   var y$3 = $m_Lcaos_frontend_Configurator$().view__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$5$1) => ((xc$3$1) => {
     var xc$4 = $as_T2(xc$3$1);
     return $m_Lchoreo_view_MermaidNPomset$().apply__Lchoreo_npomsets_NPomset__T($p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$5$1, xc$4))
   }))(this)), $m_Lcaos_view_Mermaid$());
-  var $$x55 = new $c_T2("Global B-Pomset", y$3);
+  var $$x60 = new $c_T2("Global B-Pomset", y$3);
   var y$4 = $m_Lcaos_frontend_Configurator$().view__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$6$1) => ((c) => {
     var c$1 = $as_T2(c);
     var this$109 = $m_Lchoreo_realisability_SyntacticFACS$();
@@ -15900,7 +15895,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
       return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$112, "", "\n", "")
     }
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x54 = new $c_T2("Well-formed (FACS)", y$4);
+  var $$x59 = new $c_T2("Well-formed (FACS)", y$4);
   var y$5 = $m_Lcaos_frontend_Configurator$().viewMerms__F1__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$7$1) => ((xc$4$1) => {
     var xc$5 = $as_T2(xc$4$1);
     var this$115 = $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$7$1, xc$5).projectMap__sci_Map();
@@ -15913,7 +15908,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
       return new $c_T2(_1, _2)
     }))(this$7$1)))
   }))(this)));
-  var $$x53 = new $c_T2("Local B-Pomset", y$5);
+  var $$x58 = new $c_T2("Local B-Pomset", y$5);
   var y$6 = $m_Lcaos_frontend_Configurator$().lts__F1__Lcaos_sos_SOS__F1__F1__I__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$8$1) => ((xc$5$1) => {
     var xc$6 = $as_T2(xc$5$1);
     return $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$8$1, xc$6)
@@ -15924,7 +15919,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     var _$3$1 = $as_Lchoreo_syntax_Choreo(_$3);
     return $f_Lchoreo_syntax_Choreo__toString__T(_$3$1)
   }))(this)), 80);
-  var $$x52 = new $c_T2("Global LTS", y$6);
+  var $$x57 = new $c_T2("Global LTS", y$6);
   var y$8 = $m_Lcaos_frontend_Configurator$().viewMerms__F1__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$11$1) => ((xc$6$1) => {
     var xc$7 = $as_T2(xc$6$1);
     var ch = $as_Lchoreo_syntax_Choreo(xc$7.T2__f__1);
@@ -15934,27 +15929,27 @@ function $c_Lchoreo_frontend_ICECaos$() {
     var lt = new $c_sjsr_AnonFunction2(((this$126) => ((_$4, _$5) => {
       var _$4$1 = $as_Lchoreo_syntax_Agent(_$4);
       var _$5$1 = $as_Lchoreo_syntax_Agent(_$5);
-      var $$x48 = $m_sc_StringOps$();
+      var $$x53 = $m_sc_StringOps$();
       var x = _$4$1.Lchoreo_syntax_Agent__f_s;
-      return $$x48.$less$extension__T__T__Z(x, _$5$1.Lchoreo_syntax_Agent__f_s)
+      return $$x53.$less$extension__T__T__Z(x, _$5$1.Lchoreo_syntax_Agent__f_s)
     }))(this$11$1));
     return $as_sci_List($f_sc_SeqOps__sortWith__F2__O(this$128, lt)).map__F1__sci_List(new $c_sjsr_AnonFunction1(((this$2$2, xc$2$1) => ((a) => {
       var a$1 = $as_Lchoreo_syntax_Agent(a);
-      var self$10 = a$1.Lchoreo_syntax_Agent__f_s;
-      var $$x50 = $m_Lcaos_sos_SOS$();
-      var $$x49 = $m_Lchoreo_npomsets_NPomDefSOS$();
+      var self$15 = a$1.Lchoreo_syntax_Agent__f_s;
+      var $$x55 = $m_Lcaos_sos_SOS$();
+      var $$x54 = $m_Lchoreo_npomsets_NPomDefSOS$();
       var p$2 = $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$2$2, xc$2$1);
-      var y$7 = $$x50.toMermaid__Lcaos_sos_SOS__O__F1__F1__I__T($$x49, p$2.project__Lchoreo_syntax_Agent__Lchoreo_npomsets_NPomset(a$1), new $c_sjsr_AnonFunction1(((this$131) => ((_$6) => {
+      var y$7 = $$x55.toMermaid__Lcaos_sos_SOS__O__F1__F1__I__T($$x54, p$2.project__Lchoreo_syntax_Agent__Lchoreo_npomsets_NPomset(a$1), new $c_sjsr_AnonFunction1(((this$131) => ((_$6) => {
         $as_Lchoreo_npomsets_NPomset(_$6);
         return " "
       }))(this$2$2)), new $c_sjsr_AnonFunction1(((this$2$3) => ((_$7) => {
         var _$7$1 = $as_Lchoreo_syntax_Choreo(_$7);
         return $f_Lchoreo_syntax_Choreo__toString__T(_$7$1)
       }))(this$2$2)), 80);
-      return new $c_T2(self$10, y$7)
+      return new $c_T2(self$15, y$7)
     }))(this$11$1, xc$7)))
   }))(this)));
-  var $$x51 = new $c_T2("Local LTS", y$8);
+  var $$x56 = new $c_T2("Local LTS", y$8);
   var y$9 = $m_Lcaos_frontend_Configurator$().viewAll__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$12$1) => ((cs) => {
     var cs$1 = $as_sci_Seq(cs);
     var this$138 = $as_sc_IterableOnceOps(cs$1.withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((this$135) => ((x$1$2) => {
@@ -15963,17 +15958,17 @@ function $c_Lchoreo_frontend_ICECaos$() {
     }))(this$12$1))).map__F1__O(new $c_sjsr_AnonFunction1(((this$2$4) => ((x$1$2$1) => {
       var x$1$4 = $as_T2(x$1$2$1);
       if ((x$1$4 !== null)) {
-        var name$16 = $as_T(x$1$4.T2__f__1);
+        var name$11 = $as_T(x$1$4.T2__f__1);
         var xc$9 = $as_T2(x$1$4.T2__f__2);
         var this$137 = $m_Lchoreo_realisability_SyntacticFACS$().wellChanneled__Lchoreo_npomsets_NPomset__s_Option($p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$2$4, xc$9));
         var default$1 = new $c_sjsr_AnonFunction0(((this$136) => (() => "OK"))(this$2$4));
-        return ((name$16 + ": ") + (this$137.isEmpty__Z() ? default$1.apply__O() : this$137.get__O()))
+        return ((name$11 + ": ") + (this$137.isEmpty__Z() ? default$1.apply__O() : this$137.get__O()))
       };
       throw new $c_s_MatchError(x$1$4)
     }))(this$12$1))));
     return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$138, "", "\n", "")
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x47 = new $c_T2("ALL: Well-Branched (FACS)", y$9);
+  var $$x52 = new $c_T2("ALL: Well-Branched (FACS)", y$9);
   var y$10 = $m_Lcaos_frontend_Configurator$().viewAll__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$13$1) => ((cs$2) => {
     var cs$3 = $as_sci_Seq(cs$2);
     var this$144 = $as_sc_IterableOnceOps(cs$3.withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((this$141) => ((x$1$5) => {
@@ -15982,17 +15977,17 @@ function $c_Lchoreo_frontend_ICECaos$() {
     }))(this$13$1))).map__F1__O(new $c_sjsr_AnonFunction1(((this$2$5) => ((x$1$2$2) => {
       var x$1$7 = $as_T2(x$1$2$2);
       if ((x$1$7 !== null)) {
-        var name$18 = $as_T(x$1$7.T2__f__1);
+        var name$13 = $as_T(x$1$7.T2__f__1);
         var xc$11 = $as_T2(x$1$7.T2__f__2);
         var this$143 = $m_Lchoreo_realisability_SyntacticFACS$().wellChanneled__Lchoreo_npomsets_NPomset__s_Option($p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$2$5, xc$11));
         var default$2 = new $c_sjsr_AnonFunction0(((this$142) => (() => "OK"))(this$2$5));
-        return ((name$18 + ": ") + (this$143.isEmpty__Z() ? default$2.apply__O() : this$143.get__O()))
+        return ((name$13 + ": ") + (this$143.isEmpty__Z() ? default$2.apply__O() : this$143.get__O()))
       };
       throw new $c_s_MatchError(x$1$7)
     }))(this$13$1))));
     return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$144, "", "\n", "")
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x46 = new $c_T2("ALL: Well-Channelled (FACS)", y$10);
+  var $$x51 = new $c_T2("ALL: Well-Channelled (FACS)", y$10);
   var y$11 = $m_Lcaos_frontend_Configurator$().viewAll__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$14$1) => ((cs$3$1) => {
     var cs$4 = $as_sci_Seq(cs$3$1);
     var this$151 = $as_sc_IterableOnceOps(cs$4.withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((this$147) => ((x$1$8) => {
@@ -16001,19 +15996,19 @@ function $c_Lchoreo_frontend_ICECaos$() {
     }))(this$14$1))).map__F1__O(new $c_sjsr_AnonFunction1(((this$2$6) => ((x$1$2$3) => {
       var x$1$10 = $as_T2(x$1$2$3);
       if ((x$1$10 !== null)) {
-        var name$20 = $as_T(x$1$10.T2__f__1);
+        var name$15 = $as_T(x$1$10.T2__f__1);
         var xc$13 = $as_T2(x$1$10.T2__f__2);
         var this$148 = $m_Lchoreo_realisability_SyntacticFACS$();
         var p$3 = $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$2$6, xc$13);
         var this$150 = $p_Lchoreo_realisability_SyntacticFACS$__treeLike__Lchoreo_npomsets_NPomset$Nesting__Lchoreo_npomsets_NPomset__s_Option(this$148, p$3.Lchoreo_npomsets_NPomset__f_events, p$3);
         var default$3 = new $c_sjsr_AnonFunction0(((this$149) => (() => "OK"))(this$2$6));
-        return ((name$20 + ": ") + (this$150.isEmpty__Z() ? default$3.apply__O() : this$150.get__O()))
+        return ((name$15 + ": ") + (this$150.isEmpty__Z() ? default$3.apply__O() : this$150.get__O()))
       };
       throw new $c_s_MatchError(x$1$10)
     }))(this$14$1))));
     return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$151, "", "\n", "")
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x45 = new $c_T2("ALL: Tree-like (FACS)", y$11);
+  var $$x50 = new $c_T2("ALL: Tree-like (FACS)", y$11);
   var y$12 = $m_Lcaos_frontend_Configurator$().viewAll__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$15$1) => ((cs$4$1) => {
     var cs$5 = $as_sci_Seq(cs$4$1);
     var this$157 = $as_sc_IterableOnceOps(cs$5.withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((this$154) => ((x$1$11) => {
@@ -16022,7 +16017,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     }))(this$15$1))).map__F1__O(new $c_sjsr_AnonFunction1(((this$2$7) => ((x$1$2$4) => {
       var x$1$13 = $as_T2(x$1$2$4);
       if ((x$1$13 !== null)) {
-        var name$22 = $as_T(x$1$13.T2__f__1);
+        var name$17 = $as_T(x$1$13.T2__f__1);
         var c$3 = $as_T2(x$1$13.T2__f__2);
         var this$155 = $m_Lchoreo_realisability_SyntacticFACS$();
         var p$4 = $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$2$7, c$3);
@@ -16031,13 +16026,13 @@ function $c_Lchoreo_frontend_ICECaos$() {
         var this$156 = $m_Lchoreo_realisability_SyntacticFACS$();
         var p$5 = $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$2$7, c$3);
         var tl$1 = $p_Lchoreo_realisability_SyntacticFACS$__treeLike__Lchoreo_npomsets_NPomset$Nesting__Lchoreo_npomsets_NPomset__s_Option(this$156, p$5.Lchoreo_npomsets_NPomset__f_events, p$5);
-        return (((wc$1.isEmpty__Z() && wb$1.isEmpty__Z()) && tl$1.isEmpty__Z()) ? (name$22 + ": ok") : (((((((name$22 + ": ") + (wb$1.isEmpty__Z() ? "" : (("[" + wb$1.get__O()) + "] NOT "))) + "well branched , ") + (wc$1.isEmpty__Z() ? "" : (("[" + wc$1.get__O()) + "] NOT "))) + "well channeled, ") + (tl$1.isEmpty__Z() ? "" : (("[" + tl$1.get__O()) + "] NOT "))) + "tree-like."))
+        return (((wc$1.isEmpty__Z() && wb$1.isEmpty__Z()) && tl$1.isEmpty__Z()) ? (name$17 + ": ok") : (((((((name$17 + ": ") + (wb$1.isEmpty__Z() ? "" : (("[" + wb$1.get__O()) + "] NOT "))) + "well branched , ") + (wc$1.isEmpty__Z() ? "" : (("[" + wc$1.get__O()) + "] NOT "))) + "well channeled, ") + (tl$1.isEmpty__Z() ? "" : (("[" + tl$1.get__O()) + "] NOT "))) + "tree-like."))
       };
       throw new $c_s_MatchError(x$1$13)
     }))(this$15$1))));
     return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$157, "", "\n", "")
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x44 = new $c_T2("ALL: Well-formed (FACS)", y$12);
+  var $$x49 = new $c_T2("ALL: Well-formed (FACS)", y$12);
   var y$13 = $m_Lcaos_frontend_Configurator$().view__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$16$1) => ((xc$7$1) => {
     var xc$14 = $as_T2(xc$7$1);
     var this$160 = $m_Lchoreo_analysis_DepGuarded$();
@@ -16052,7 +16047,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     };
     throw new $c_s_MatchError(x25)
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x43 = new $c_T2("Dependently Guarded (Choreo)", y$13);
+  var $$x48 = new $c_T2("Dependently Guarded (Choreo)", y$13);
   var y$14 = $m_Lcaos_frontend_Configurator$().view__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$17$1) => ((xc$8$1) => {
     var xc$15 = $as_T2(xc$8$1);
     var c$5 = $as_Lchoreo_syntax_Choreo(xc$15.T2__f__1);
@@ -16062,23 +16057,23 @@ function $c_Lchoreo_frontend_ICECaos$() {
       return "OK"
     } else {
       if ((!wb$2.isRight__Z())) {
-        var $$x41 = $m_sc_StringOps$();
+        var $$x46 = $m_sc_StringOps$();
         var x$2 = $m_Lchoreo_analysis_WellBranched$().show__s_util_Either__T(wb$2);
-        var $$x40 = (("Not well branched:\n  - " + $$x41.drop$extension__T__I__T(x$2, 7)) + "\n")
+        var $$x45 = (("Not well branched:\n  - " + $$x46.drop$extension__T__I__T(x$2, 7)) + "\n")
       } else {
-        var $$x40 = ""
+        var $$x45 = ""
       };
       if ((!wc$2.isRight__Z())) {
-        var $$x39 = $m_sc_StringOps$();
+        var $$x44 = $m_sc_StringOps$();
         var x$3 = $m_Lchoreo_analysis_WellBranched$().show__s_util_Either__T(wc$2);
-        var $$x38 = (("Not well channeled:\n  - " + $$x39.drop$extension__T__I__T(x$3, 7)) + "\n")
+        var $$x43 = (("Not well channeled:\n  - " + $$x44.drop$extension__T__I__T(x$3, 7)) + "\n")
       } else {
-        var $$x38 = ""
+        var $$x43 = ""
       };
-      return ($$x40 + $$x38)
+      return ($$x45 + $$x43)
     }
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x42 = new $c_T2("Choreo (old): Syntactic realisability", y$14);
+  var $$x47 = new $c_T2("Choreo (old): Syntactic realisability", y$14);
   var y$15 = $m_Lcaos_frontend_Configurator$().viewAll__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$18$1) => ((cs$5$1) => {
     var cs$6 = $as_sci_Seq(cs$5$1);
     var this$177 = $as_sc_IterableOnceOps(cs$6.withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((this$172) => ((x$1$14) => {
@@ -16087,7 +16082,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     }))(this$18$1))).map__F1__O(new $c_sjsr_AnonFunction1(((this$2$8) => ((x$1$2$5) => {
       var x$1$16 = $as_T2(x$1$2$5);
       if ((x$1$16 !== null)) {
-        var name$24 = $as_T(x$1$16.T2__f__1);
+        var name$19 = $as_T(x$1$16.T2__f__1);
         var xc$17 = $as_T2(x$1$16.T2__f__2);
         var c$6 = $as_Lchoreo_syntax_Choreo(xc$17.T2__f__1);
         var r = $m_Lchoreo_analysis_WellBranched$().apply__Lchoreo_syntax_Choreo__Lcaos_sos_SOS__s_util_Either(c$6, $m_Lchoreo_sos_ChorDefSOS$());
@@ -16096,13 +16091,13 @@ function $c_Lchoreo_frontend_ICECaos$() {
         var wc$3 = r$1.isRight__Z();
         var this$176 = $m_Lchoreo_analysis_DepGuarded$();
         var dg = this$176.dependentlyGuarded__Lchoreo_syntax_Choreo__s_util_Either(c$6).isRight__Z();
-        return (((wc$3 && wb$3) && dg) ? (name$24 + ": ok") : (((((((name$24 + ": ") + (wb$3 ? "" : "NOT ")) + "well branched, ") + (wc$3 ? "" : "NOT ")) + "well channeled, ") + (dg ? "" : "NOT ")) + "dependently guarded."))
+        return (((wc$3 && wb$3) && dg) ? (name$19 + ": ok") : (((((((name$19 + ": ") + (wb$3 ? "" : "NOT ")) + "well branched, ") + (wc$3 ? "" : "NOT ")) + "well channeled, ") + (dg ? "" : "NOT ")) + "dependently guarded."))
       };
       throw new $c_s_MatchError(x$1$16)
     }))(this$18$1))));
     return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$177, "", "\n", "")
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x37 = new $c_T2("Choreo (old): ALL - Syntactic realisability", y$15);
+  var $$x42 = new $c_T2("Choreo (old): ALL - Syntactic realisability", y$15);
   var y$16 = $m_Lcaos_frontend_Configurator$().steps__F1__Lcaos_sos_SOS__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$19$1) => ((xc$9$1) => {
     var xc$18 = $as_T2(xc$9$1);
     return $as_Lchoreo_syntax_Choreo(xc$18.T2__f__1)
@@ -16110,7 +16105,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     var _$8$1 = $as_Lchoreo_syntax_Choreo(_$8);
     return $f_Lchoreo_syntax_Choreo__toString__T(_$8$1)
   }))(this)), $m_Lcaos_view_Text$());
-  var $$x36 = new $c_T2("Simulate Choreo (without added dependencies for b-pomsets)", y$16);
+  var $$x41 = new $c_T2("Simulate Choreo (without added dependencies for b-pomsets)", y$16);
   var y$17 = $m_Lcaos_frontend_Configurator$().steps__F1__Lcaos_sos_SOS__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$21$1) => ((xc$10$1) => {
     var xc$19 = $as_T2(xc$10$1);
     return $p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$21$1, xc$19)
@@ -16118,7 +16113,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     var p$7 = $as_Lchoreo_npomsets_NPomset(p$6);
     return $m_Lchoreo_view_MermaidNPomset$().apply__Lchoreo_npomsets_NPomset__T(p$7)
   }))(this)), $m_Lcaos_view_Mermaid$());
-  var $$x35 = new $c_T2("Simulate B-Pomset", y$17);
+  var $$x40 = new $c_T2("Simulate B-Pomset", y$17);
   var y$18 = $m_Lcaos_frontend_Configurator$().compareBranchBisim__Lcaos_sos_SOS__Lcaos_sos_SOS__F1__F1__I__Lcaos_frontend_widgets_WidgetInfo($m_Lchoreo_sos_ChorDefSOS$(), $m_Lchoreo_npomsets_NPomDefSOS$(), new $c_sjsr_AnonFunction1(((this$23$1) => ((xc$11$1) => {
     var xc$20 = $as_T2(xc$11$1);
     return $as_Lchoreo_syntax_Choreo(xc$20.T2__f__1)
@@ -16127,7 +16122,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
     var c$7 = $as_Lchoreo_syntax_Choreo(xc$21.T2__f__1);
     return new $c_Lchoreo_npomsets_Choreo2NPom().choreo$npomsets$Choreo2NPom$$choreo2npom__Lchoreo_syntax_Choreo__Lchoreo_npomsets_NPomset(c$7)
   }))(this)), 200);
-  var elems$3 = $$x56.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$$x55, $$x54, $$x53, $$x52, $$x51, $$x47, $$x46, $$x45, $$x44, $$x43, $$x42, $$x37, $$x36, $$x35, new $c_T2("Choreo vs B-Pomset (find bisimulation - no loops with infinte states)", y$18)]));
+  var elems$3 = $$x61.wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$$x60, $$x59, $$x58, $$x57, $$x56, $$x52, $$x51, $$x50, $$x49, $$x48, $$x47, $$x42, $$x41, $$x40, new $c_T2("Choreo vs B-Pomset (find bisimulation - no loops with infinte states)", y$18)]));
   this.Lchoreo_frontend_ICECaos$__f_widgets = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems$3)
 }
 $c_Lchoreo_frontend_ICECaos$.prototype = new $h_O();
