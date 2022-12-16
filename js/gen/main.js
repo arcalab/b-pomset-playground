@@ -16307,7 +16307,7 @@ function $c_Lchoreo_frontend_ICECaos$() {
   }))(this)), new $c_sjsr_AnonFunction1(((this$14$1) => ((xc$9$1) => {
     var xc$10 = $as_T2(xc$9$1);
     return $m_Lchoreo_sos_Network$().mkNetCS__O__Lchoreo_projection_Projection__Lchoreo_sos_Network$NetworkCausal($p_Lchoreo_frontend_ICECaos$__chor2npom__T2__Lchoreo_npomsets_NPomset(this$14$1, xc$10), $m_Lchoreo_projection_NPomDefProj$())
-  }))(this)), 5000);
+  }))(this)), 1000);
   var $$x54 = new $c_T2("Realisability via bisimulation (causal network)", y$10);
   var y$11 = $m_Lcaos_frontend_Configurator$().steps__F1__Lcaos_sos_SOS__F1__Lcaos_view_ViewType__Lcaos_frontend_widgets_WidgetInfo(new $c_sjsr_AnonFunction1(((this$15$1) => ((xc$10$1) => {
     var xc$11 = $as_T2(xc$10$1);
