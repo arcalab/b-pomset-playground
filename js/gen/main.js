@@ -6914,8 +6914,7 @@ function $f_Lchoreo_syntax_Choreo__toString__T($thiz) {
     var x$1$3 = $as_Lchoreo_syntax_Choreo$Internal($thiz);
     var x92 = x$1$3.Lchoreo_syntax_Choreo$Internal__f_a;
     var x93 = x$1$3.Lchoreo_syntax_Choreo$Internal__f_m;
-    var this$7 = x93.Lchoreo_syntax_Msg__f_l;
-    return ((x92 + ":") + $f_sc_IterableOnceOps__mkString__T__T__T__T(this$7, "", "/", ""))
+    return (("" + x92) + x93.pp__T())
   };
   var x = $m_Lchoreo_syntax_Choreo$Tau$();
   if ((x === $thiz)) {
@@ -7133,7 +7132,7 @@ $c_Lchoreo_view_MermaidNPomset$.prototype.mkAction__sci_Map__I__T = (function(ac
     var x$1$2 = $as_Lchoreo_syntax_Choreo$Internal(x24);
     var x27 = x$1$2.Lchoreo_syntax_Choreo$Internal__f_a;
     var x28 = x$1$2.Lchoreo_syntax_Choreo$Internal__f_m;
-    return (((((((e + "(") + e) + ":") + x27.Lchoreo_syntax_Agent__f_s) + ":") + x28.pp__T()) + "):::lbl")
+    return ((((((e + "(") + e) + ":") + x27.Lchoreo_syntax_Agent__f_s) + x28.pp__T()) + "):::lbl")
   };
   var x = $m_Lchoreo_syntax_Choreo$Tau$();
   if ((x === x24)) {
@@ -16143,46 +16142,46 @@ function $c_Lchoreo_frontend_ICECaos$() {
   $m_s_package$();
   var $$x40 = $m_sr_ScalaRunTime$();
   var $$x39 = $m_Lcaos_frontend_Configurator$();
-  var self = new $c_T2("R1", "(a->b:yes||b->a:yes) +\n(a->b:no||b->a:no)");
+  var self = new $c_T2("R1", "// R1 example\n(a->b:yes||b->a:yes) +\n(a->b:no||b->a:no)");
   var $$x38 = $$x39.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self, "R1 example from the journal paper. Either both Alice (a) and Bob (b) say 'yes' or they say 'no' to each other. Not realisable."));
   var $$x37 = $m_Lcaos_frontend_Configurator$();
-  var self$1 = new $c_T2("R2", "a->b:int;\n((b->a:yes + b->a:no)\n ||\n a->b:bool)");
+  var self$1 = new $c_T2("R2", "// R2 example\na->b:int;\n((b->a:yes + b->a:no)\n ||\n a->b:bool)");
   var $$x36 = $$x37.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$1, "R2 example from the journal paper. Alice (a) sends a number to Bob (b), and Bob replies both a 'yes/no' answer and a boolean. Realisable."));
   var $$x35 = $m_Lcaos_frontend_Configurator$();
-  var self$2 = new $c_T2("R3", "a->b:int; || a->b:bool\n[1->3]");
+  var self$2 = new $c_T2("R3", "// R3 example\na->b:int; || a->b:bool\n[1->3]");
   var $$x34 = $$x35.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$2, "R3 example from the journal paper. Alice (a) sends a number followed by a boolean to Bob (b), and Bob receives these in any order. Not well-formed but realisable."));
   var $$x33 = $m_Lcaos_frontend_Configurator$();
-  var self$3 = new $c_T2("R4", "(a->b:yes + a->b:no);\na->b:int");
+  var self$3 = new $c_T2("R4", "// R4 example\n(a->b:yes + a->b:no);\na->b:int");
   var $$x32 = $$x33.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$3, "R4 example from the journal paper. Alice (a) sends 'yes' or 'no' to Bob (b), and he replies with a number. Not well-formed but realisable."));
   var $$x31 = $m_Lcaos_frontend_Configurator$();
-  var self$4 = new $c_T2("R4 (tree-like)", "(a->b:yes;a->b:int) +\n(a->b:no; a->b:int)");
+  var self$4 = new $c_T2("R4 (tree-like)", "// R1 example (tree-like)\n(a->b:yes;a->b:int) +\n(a->b:no; a->b:int)");
   var $$x30 = $$x31.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$4, "Variation of the R4 example from the journal paper, after moving the trailing actions inside the choice. Becomes both well-formed and realisable."));
   var $$x29 = $m_Lcaos_frontend_Configurator$();
-  var self$5 = new $c_T2("Review", "((c->a:r;\n (a->c:y+a->c:n) ||\n c->b:r;\n (b->c:y+b->c:n)\n) + 0)\n||\nc->a:d || c->b:d\n\n[4->13,6->13\n,10->15,12->15]");
+  var self$5 = new $c_T2("Review", "// Review example\n((c->a:r;\n (a->c:y+a->c:n) ||\n c->b:r;\n (b->c:y+b->c:n)\n) + 0)\n||\nc->a:d || c->b:d\n\n[4->13,6->13\n,10->15,12->15]");
   var $$x28 = $$x29.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$5, "Requesting reviews example: Carol (c) either sends Alice (a) and Bob (b) a review request (r), in which case both Alice and Bob communicate to Carol whether they recommend acceptance (y or n), or she does not (e.g., if the paper can be rejected without any review). In both cases, Carol will signal Alice and Bob when their (potential) work is done (d)."));
   var $$x27 = $m_Lcaos_frontend_Configurator$();
-  var self$6 = new $c_T2("Review (choreographic)", "(c->a:r;\n (a->c:y;c->a:d + a->c:n;c->a:d)\n ||\n c->b:r;\n (b->c:y;c->b:d + b->c:n;c->b:d)\n) +\nc->a:d || c->b:d");
+  var self$6 = new $c_T2("Review (choreographic)", "// Review variation (choreographic)\n(c->a:r;\n (a->c:y;c->a:d + a->c:n;c->a:d)\n ||\n c->b:r;\n (b->c:y;c->b:d + b->c:n;c->b:d)\n) +\nc->a:d || c->b:d");
   var $$x26 = $$x27.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$6, "Variation of the requesting reviews example (with replication to be represented by a choreography): Carol (c) either sends Alice (a) and Bob (b) a review request (r), in which case both Alice and Bob communicate to Carol whether they recommend acceptance (y or n), or she does not (e.g., if the paper can be rejected without any review). In both cases, Carol will signal Alice and Bob when their (potential) work is done (d)."));
   var $$x25 = $m_Lcaos_frontend_Configurator$();
-  var self$7 = new $c_T2("Buyer-seller (FACS)", "b1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n(b2->s:ok;b2->s:string;s->b2:date + b2->s:quit)");
+  var self$7 = new $c_T2("Buyer-seller", "// Buyer-seller protocol\nb1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n(b2->s:ok;b2->s:string;s->b2:date + b2->s:quit)");
   var $$x24 = $$x25.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$7, "Two-buyers-protocol"));
   var $$x23 = $m_Lcaos_frontend_Configurator$();
-  var self$8 = new $c_T2("Simple stream (FACS)", "(d->r:bool||k->r:bool);\nr->c:bool;\n(d->r:bool||k->r:bool);\nr->c:bool");
+  var self$8 = new $c_T2("Streaming", "// Simple streaming protocol\n(d->r:bool||k->r:bool);\nr->c:bool;\n(d->r:bool||k->r:bool);\nr->c:bool");
   var $$x22 = $$x23.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$8, "Simple streaming protocol"));
   var $$x21 = $m_Lcaos_frontend_Configurator$();
-  var self$9 = new $c_T2("BS-ill-chan", "b1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n((b2->s:ok||b2->s:string);s->b2:date + b2->s:quit)");
+  var self$9 = new $c_T2("BS-ill-chan", "// Buyer-seller (bad) variation\nb1->s:string;\n(s->b1:int;b1->b2:int || s->b2:int);\n((b2->s:ok||b2->s:string);s->b2:date + b2->s:quit)");
   var $$x20 = $$x21.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$9, "Ill-channeled version of the buyer-seller protocol with parallel sends"));
   var $$x19 = $m_Lcaos_frontend_Configurator$();
-  var self$10 = new $c_T2("SS-ill-chan", "((d->r:bool||k->r:bool);\n r->c:bool)\n||\n((d->r:bool||k->r:bool);\n r->c:bool)");
+  var self$10 = new $c_T2("SS-ill-chan", "// Streaming (bad) variation\n((d->r:bool||k->r:bool);\n r->c:bool)\n||\n((d->r:bool||k->r:bool);\n r->c:bool)");
   var $$x18 = $$x19.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$10, "Ill-channeled version of the simple streaming protocol with parallel sends"));
   var $$x17 = $m_Lcaos_frontend_Configurator$();
-  var self$11 = new $c_T2("MC", "(m->w1:t;w1->m:d) ||\n(m->w2:t;w2->m:d)");
+  var self$11 = new $c_T2("MW", "// Master-worker protocol\n(m->w1:t;w1->m:d) ||\n(m->w2:t;w2->m:d)");
   var $$x16 = $$x17.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$11, "Master-Workers protocol"));
   var $$x15 = $m_Lcaos_frontend_Configurator$();
-  var self$12 = new $c_T2("DV", "((a->b:y || a->c:y) +\n (a->b:n || a->c:n))   ||\n((b->a:y || b->c:y) +\n (b->a:n || b->c:n))   ||\n((c->a:y || c->b:y) +\n (c->a:n || c->b:n))");
+  var self$12 = new $c_T2("DV", "// Distributed voting protocol\n((a->b:y || a->c:y) +\n (a->b:n || a->c:n))   ||\n((b->a:y || b->c:y) +\n (b->a:n || b->c:n))   ||\n((c->a:y || c->b:y) +\n (c->a:n || c->b:n))");
   var $$x14 = $$x15.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$12, "Distribted Voting protocol with 3 participants"));
   var $$x13 = $m_Lcaos_frontend_Configurator$();
-  var self$13 = new $c_T2("Race", "(\n (ctr->r1: start ||\n  ctr->r2: start);\n (r1->r1:run||\n  r2->r2:run); \n (r1->ctr: finish;r1->r1:rest ||\n  r2->ctr: finish;r2->r2:rest)\n)*");
+  var self$13 = new $c_T2("Race", "// Race example\n(\n (ctr->r1: start ||\n  ctr->r2: start);\n (r1->r1:run||\n  r2->r2:run); \n (r1->ctr: finish;r1->r1:rest ||\n  r2->ctr: finish;r2->r2:rest)\n)*");
   var $$x12 = $$x13.toExampleDesc__T2__Lcaos_frontend_Configurator$Example(new $c_T2(self$13, "Two runners in a race with a controller."));
   var nameCode = new $c_T2("Ex.1.1", "(a->b:x + a->c:x);\n(d->b:x + d->e:x)");
   var example = $as_T(nameCode.T2__f__2);
